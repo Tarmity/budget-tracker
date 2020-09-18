@@ -13,10 +13,10 @@ request.onsuccess = function(event) {
 
   // check if app is online before reading from db
   if (navigator.onLine) {
+    checkDatabase();
     console.log('online send data to MongoDB');
   } else {
     //if offline send data to indexedDB
-    checkDatabase();
     console.log('offline send data to indexedDB');
   }
 };
@@ -45,7 +45,9 @@ function checkDatabase() {
   const getAll = store.getAll();
 
   getAll.onsuccess = function() {
+      console.log(getAll.result)
     if (getAll.result.length > 0) {
+        console.log(getAll.result[1])
       fetch("/api/transaction/bulk", {
         method: "POST",
         body: JSON.stringify(getAll.result),
@@ -67,7 +69,11 @@ function checkDatabase() {
       });
     }
   };
+  getAll.onerror = function (error) {
+      console.log(error)
+  } 
 }
+
 
 // listen for app coming back online
 window.addEventListener("offline", checkDatabase);
