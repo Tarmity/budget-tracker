@@ -4,7 +4,7 @@
 ## Description
   * This repository is where I developed the Budget Tracker. Not only do I work on code and issues here. I also publish the latest updates and functions. This source code is avaialable to everyone under the Free Software Foundation, Inc. http//fsf.org/.
   
-  ![img]()
+  ![img](https://github.com/Tarmity/budget-tracker/blob/master/public/img/budgetTracker.png)
   
 
   ## Table of Contents
