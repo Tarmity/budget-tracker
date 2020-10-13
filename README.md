@@ -21,7 +21,7 @@
     npm install
 
   ## Usage
-  To use the Budget Tracker, simply go the this link () and test it out. You can also download or clone the repository and lanch the app from you own computer. 
+  To use the Budget Tracker, simply go the this link (https://limitless-gorge-77388.herokuapp.com/) and test it out. You can also download or clone the repository and lanch the app from you own computer. 
   
   
 
